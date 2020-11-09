@@ -42,7 +42,7 @@ public class CustomerDao extends tb_pelanggan{
         con.connect();
         try {
             st = con.conn.createStatement();
-            query = "update tb_pelanggan set nama='" + nama + "', kontak ='"+kontak+"', alamat ='"+alamat+"', status = '"+ rute +"' where Id = '" + Id + "'";
+            query = "update tb_pelanggan set nama='" + nama + "', kontak ='"+kontak+"', alamat ='"+alamat+"', rute = '"+ rute +"' where Id = '" + Id + "'";
             st.executeUpdate(query);
             st.close();
             con.conn.close();

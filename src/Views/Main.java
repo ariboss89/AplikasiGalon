@@ -32,7 +32,7 @@ public class Main extends javax.swing.JFrame {
     public Main() {
         initComponents();
         setLocationRelativeTo(this);
-        //Check();
+        Check();
         Dimension desktopSize = jDesktopPane1.getSize();
         
         Dimension jFrame = selling.getSize();

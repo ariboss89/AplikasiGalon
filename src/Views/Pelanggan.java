@@ -311,9 +311,9 @@ public class Pelanggan extends javax.swing.JInternalFrame {
         btnSave.setEnabled(false);
         cst.setId(Integer.parseInt(jTable1.getValueAt(baris, 0).toString()));
         txtNama.setText(jTable1.getValueAt(baris, 1).toString());
-        cbRute.setSelectedItem(jTable1.getValueAt(baris, 2).toString());
+        cbRute.setSelectedItem(jTable1.getValueAt(baris, 4).toString());
         txtAlamat.setText(jTable1.getValueAt(baris, 3).toString());
-        txtKontak.setText(jTable1.getValueAt(baris, 4).toString());
+        txtKontak.setText(jTable1.getValueAt(baris, 2).toString());
         btnEdit.setEnabled(true);
     }//GEN-LAST:event_jTable1MouseClicked
 

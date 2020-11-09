@@ -123,7 +123,7 @@ public class Employee extends javax.swing.JInternalFrame {
         jLabel3.setText("ALAMAT");
 
         cbStatus.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        cbStatus.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "PILIH", "LEMBAH ASRI", "TOBONG BATA", "GRIYA LESTARI" }));
+        cbStatus.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "PILIH", "KAWIN", "BELUM KAWIN" }));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel4.setText("STATUS");
@@ -310,9 +310,9 @@ public class Employee extends javax.swing.JInternalFrame {
         btnSave.setEnabled(false);
         pmk.setId(Integer.parseInt(jTable1.getValueAt(baris, 0).toString()));
         txtNama.setText(jTable1.getValueAt(baris, 1).toString());
-        cbStatus.setSelectedItem(jTable1.getValueAt(baris, 2).toString());
+        cbStatus.setSelectedItem(jTable1.getValueAt(baris, 4).toString());
         txtAlamat.setText(jTable1.getValueAt(baris, 3).toString());
-        txtKontak.setText(jTable1.getValueAt(baris, 4).toString());
+        txtKontak.setText(jTable1.getValueAt(baris, 2).toString());
         btnEdit.setEnabled(true);
     }//GEN-LAST:event_jTable1MouseClicked
 

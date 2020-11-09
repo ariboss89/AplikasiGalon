@@ -72,7 +72,7 @@ public class ReportDao extends tb_laporan{
             JasperViewer.viewReport(jasperPrint, false);
             JasperViewer.setDefaultLookAndFeelDecorated(true);
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e+"MANISE");
+            JOptionPane.showMessageDialog(null, e);
         }
     }
     

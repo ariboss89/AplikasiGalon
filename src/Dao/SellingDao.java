@@ -141,7 +141,7 @@ public class SellingDao extends tb_penjualan {
         return data;
     }
     
-    public String[][] ShowByDate(Date tanggal) {
+    public String[][] ShowByDate(Date dari, Date sampai) {
 
         res = null;
         String[][] data = null;
@@ -166,8 +166,7 @@ public class SellingDao extends tb_penjualan {
                     + "a.tanggal "
                     + "FROM dt_penjualan c "
                     + "RIGHT JOIN tb_penjualan a "
-                    + "ON c.id_penjualan = a.id_penjualan "
-                    + "WHERE a.tanggal = '"+tanggal+ "'";
+                    + "ON c.id_penjualan = a.id_penjualan WHERE a.tanggal BETWEEN '"+dari+"' AND '"+sampai+"' ";
             
             res = st.executeQuery(query);
             data = new String[jumlahBaris][6];

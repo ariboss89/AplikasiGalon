@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="26ee114e-fc44-46a7-ad0f-05b824da9d8b">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="93"/>
+	<property name="ireport.y" value="0"/>
 	<queryString>
 		<![CDATA[SELECT *FROM tb_karyawan]]>
 	</queryString>
@@ -27,22 +27,26 @@
 	<title>
 		<band height="64" splitType="Stretch">
 			<rectangle>
-				<reportElement x="0" y="0" width="555" height="64" uuid="c4a8e492-7dec-4c40-8b10-293ccfcb0490"/>
+				<reportElement x="139" y="0" width="416" height="64" uuid="c4a8e492-7dec-4c40-8b10-293ccfcb0490"/>
 			</rectangle>
 			<staticText>
-				<reportElement x="0" y="32" width="555" height="32" uuid="d8148a66-cd35-4c24-8650-ed4d6ba81705"/>
+				<reportElement x="139" y="32" width="416" height="32" uuid="d8148a66-cd35-4c24-8650-ed4d6ba81705"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="24" isBold="true"/>
 				</textElement>
-				<text><![CDATA[TOKO NUSAQUA TANJUNGPINANG]]></text>
+				<text><![CDATA[TOKO NUSA QUA TANJUNGPINANG]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="0" width="555" height="32" uuid="55a4560b-a9a4-4e60-94ae-fa433ecf1909"/>
+				<reportElement x="139" y="0" width="416" height="32" uuid="55a4560b-a9a4-4e60-94ae-fa433ecf1909"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="24" isBold="true"/>
 				</textElement>
 				<text><![CDATA[LAPORAN KARYAWAN]]></text>
 			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="491" height="64" uuid="7d3308d7-ba30-4112-94be-588394455fb8"/>
+				<imageExpression><![CDATA["D:\\PROJECT\\Repos\\AplikasiGalon\\src\\Images\\logo nusaqua.jpeg"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<pageHeader>

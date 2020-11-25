@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="18e0883a-d263-4e80-8b74-4da84ba51c28">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="330"/>
+	<property name="ireport.y" value="0"/>
 	<parameter name="Id" class="java.lang.Integer"/>
 	<queryString>
 		<![CDATA[SELECT *FROM tb_karyawan WHERE Id =  $P{Id}]]>
@@ -27,22 +27,26 @@
 	</background>
 	<title>
 		<band height="64" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="491" height="64" uuid="c86db492-a8c5-49e3-b317-d7634e822638"/>
+				<imageExpression><![CDATA["D:\\PROJECT\\Repos\\AplikasiGalon\\src\\Images\\logo nusaqua.jpeg"]]></imageExpression>
+			</image>
 			<rectangle>
-				<reportElement x="0" y="0" width="555" height="64" uuid="16eb86ab-b81a-4793-a308-b4d62cbf4c86"/>
+				<reportElement x="125" y="0" width="430" height="64" uuid="16eb86ab-b81a-4793-a308-b4d62cbf4c86"/>
 			</rectangle>
 			<staticText>
-				<reportElement x="0" y="0" width="555" height="32" uuid="0a90d9bb-2343-4552-a720-943e0ab2e3d8"/>
+				<reportElement x="125" y="0" width="430" height="32" uuid="0a90d9bb-2343-4552-a720-943e0ab2e3d8"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="24" isBold="true"/>
 				</textElement>
 				<text><![CDATA[LAPORAN KARYAWAN]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="32" width="555" height="32" uuid="423af1fb-938d-4f68-b484-b9c0ba6e7bde"/>
+				<reportElement x="125" y="32" width="430" height="32" uuid="423af1fb-938d-4f68-b484-b9c0ba6e7bde"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="24" isBold="true"/>
 				</textElement>
-				<text><![CDATA[TOKO NUSAQUA TANJUNGPINANG]]></text>
+				<text><![CDATA[TOKO NUSA QUA TANJUNGPINANG]]></text>
 			</staticText>
 		</band>
 	</title>

@@ -78,7 +78,6 @@ public class Pelanggan extends javax.swing.JInternalFrame {
         jLabel4 = new javax.swing.JLabel();
         txtKontak = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
-        btnDelete = new javax.swing.JButton();
         btnEdit = new javax.swing.JButton();
         btnSave = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -137,15 +136,6 @@ public class Pelanggan extends javax.swing.JInternalFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        btnDelete.setBackground(new java.awt.Color(255, 0, 0));
-        btnDelete.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnDelete.setText("DELETE");
-        btnDelete.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDeleteActionPerformed(evt);
-            }
-        });
-
         btnEdit.setBackground(new java.awt.Color(255, 255, 51));
         btnEdit.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnEdit.setText("EDIT");
@@ -173,8 +163,6 @@ public class Pelanggan extends javax.swing.JInternalFrame {
                 .addComponent(btnSave)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnEdit)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnDelete)
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -182,7 +170,6 @@ public class Pelanggan extends javax.swing.JInternalFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(12, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnDelete)
                     .addComponent(btnEdit)
                     .addComponent(btnSave))
                 .addContainerGap())
@@ -334,17 +321,6 @@ public class Pelanggan extends javax.swing.JInternalFrame {
         }
     }//GEN-LAST:event_btnEditActionPerformed
 
-    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
-        // TODO add your handling code here:
-        int n = JOptionPane.showConfirmDialog(null, "Konfirmasi", "Apakah Anda Yakin Ingin Menghapus ?", JOptionPane.YES_NO_OPTION);
-        if (n == 0) {
-            cst.Delete(cst.getId());
-        }
-        else{
-            Refresh();
-        }
-    }//GEN-LAST:event_btnDeleteActionPerformed
-
     private void formInternalFrameOpened(javax.swing.event.InternalFrameEvent evt) {//GEN-FIRST:event_formInternalFrameOpened
         // TODO add your handling code here:
         rss = cst.Show();
@@ -388,7 +364,6 @@ public class Pelanggan extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnEdit;
     private javax.swing.JButton btnSave;
     private javax.swing.JComboBox cbRute;

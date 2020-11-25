@@ -36,22 +36,26 @@
 	<title>
 		<band height="64" splitType="Stretch">
 			<rectangle>
-				<reportElement x="0" y="0" width="555" height="64" uuid="cbc762a9-ce81-4711-af85-557b45f9ef74"/>
+				<reportElement x="133" y="0" width="422" height="64" uuid="cbc762a9-ce81-4711-af85-557b45f9ef74"/>
 			</rectangle>
 			<staticText>
-				<reportElement x="0" y="32" width="555" height="32" uuid="a88996aa-055d-462d-a332-9785af7e8dee"/>
+				<reportElement x="133" y="32" width="422" height="32" uuid="a88996aa-055d-462d-a332-9785af7e8dee"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="24" isBold="true"/>
 				</textElement>
-				<text><![CDATA[TOKO NUSAQUA TANJUNGPINANG]]></text>
+				<text><![CDATA[TOKO NUSA QUA TANJUNGPINANG]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="0" width="555" height="32" uuid="9a954727-249d-4b11-b74d-3f45ab67d9df"/>
+				<reportElement x="133" y="0" width="422" height="32" uuid="9a954727-249d-4b11-b74d-3f45ab67d9df"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="24" isBold="true"/>
 				</textElement>
 				<text><![CDATA[LAPORAN PENJUALAN]]></text>
 			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="491" height="64" uuid="333397dd-92c1-4e83-b8d0-a99aeadc6b39"/>
+				<imageExpression><![CDATA["D:\\PROJECT\\Repos\\AplikasiGalon\\src\\Images\\logo nusaqua.jpeg"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<pageHeader>
